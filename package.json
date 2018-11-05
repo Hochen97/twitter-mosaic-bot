@@ -1,0 +1,19 @@
+{
+  "name": "twitter-photomosaic-crawler",
+  "version": "0.0.1",
+  "description": "A node webapp that will monitor the twitter stream for incoming tweets that match a defined query",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jacob Hochendoner",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.18.4",
+    "socket.io": "^2.1.1",
+    "twit": "^2.2.11"
+  }
+}

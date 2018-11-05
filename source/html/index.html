@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div id="main">
+      <div id="formSect">
+        <form id="queryForm" method="post" action="">
+          <label for="track">Tracking terms</label>
+          <p>(" " = AND | , = OR)</p>
+          <input id="q" name="track" type="text"/><br/><br/>
+          <label for="language">Language</label><br/>
+          <input id="submit" type="submit" href="#"/>
+        </form>
+      </div><br/>
+      <div id="results"></div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js">
+      <script src="/javascripts/main.js"></script>
+      <script src="/socket.io/socket.io.js"></script>
+      <script>var socket = io();</script>
+    </script>
+  </body>
+</html>
